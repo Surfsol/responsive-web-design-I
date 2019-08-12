@@ -236,6 +236,52 @@ footer {
   text-align: center;
 }
 
+
+
+@media screen and (max-width: 800px){
+	body {
+	  /* centers the website */
+	  width: 800px;
+	  margin: 0 auto;
+	}
+
+	.logo_mobile{
+    display: flex;
+ 	justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    height: 30px;
+    padding-bottom: 10px%; 
+  	}
+
+   .logo{
+    display: none;
+  	}
+
+  	nav{
+  		justify-content: space-around;
+  	}
+  	.globe{
+  		display: none;
+  	}
+  	header{
+  		margin:50px auto; 
+  		width: 100%;
+  	}
+  	header .title {
+	  font-size: 68px;
+	  justify-content: center;
+	}
+	header button{
+		width: 150px;
+		height: 30px;
+		margin:auto; 
+		align-items: center;
+	}
+}
+
+
+
 @media screen and (max-width: 500px) {
   nav {
     flex-direction: column;
