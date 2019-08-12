@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.logo_mobile{
+	display: none;
+}
+
+nav {
+	margin: auto;
+	width: 876px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+}
+
+nav .logo {
+	padding-left: 50px;
+}
+
+.top{
+	display: flex;
+	flex-direction: column;
+}
+
+.pic{
+	margin-top: 40px;
+	width: 876px;
+}
+
+.services{
+	width: 876px;
+	border-bottom: 2px solid black;
+	margin-top: 100px
+	margin-bottom: 50px;
+}
+.services p{
+	margin-bottom: 20px;
+}
+/* flex, direction row, wraps down, space around between items in row*/
+.main{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 876px;
+	border-bottom: 2px solid black; 
+	
+}
+
+/* border-radius curve edges, margin between p, padding inside  */
+button{
+	margin: 10px;
+	padding: 5px; 
+	border-radius: 5px;
+}
+
+/* margin space between p and button */
+ h1{
+ 	margin: 20px;
+ }
+p, h3, {
+	margin: 15px;
+}
+
+
+
+/* margin-top for spacing between rows, padding text to boarder  */
+.digital{
+	width: 48%;
+	border: 1px solid black;
+	margin-top: 20px;
+	padding: 10px; 
+
+}
+
+.ux{
+	width: 48%;
+	border: 1px solid black;
+	margin-top: 20px;
+	padding: 10px; 
+
+}
+.market{
+	border: 1px solid black;
+	width: 48%;
+	margin-top: 10px;
+	padding: 10px; 
+
+}
+
+.web{
+	border: 1px solid black;
+	width: 48%;
+	margin-top: 10px;
+	padding: 10px; 
+
+
+}
+
+/*margin-bottom for space between bottom border line*/
+.ios{
+	border: 1px solid black;
+	width: 48%;
+	margin-top: 10px;
+	padding: 10px; 
+	margin-bottom: 40px;
+
+}
+
+.android{
+	border: 1px solid black;
+	width: 48%;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	padding: 10px; 
+
+}
+.bottom{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px
+	
+}
+.facts{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.pic_bottom{
+	width: 48%
+}
+/*square bullets, inside : so bullets stay in box;  */
+ul{
+	list-style-type: square;
+	list-style-position: inside;
+}
+/*space on top of listed items*/
+li{
+	margin-top: 10px;
+
+}
+
+body { /* centers the website */
+	width: 876px;
+	margin: 0 auto;
+}
+
+footer{
+	text-align: center;
+	margin: 80px;
+}
+
+@media screen and (max-width: 500px){
+	body{
+		width: 500px;
+		margin: 0 auto; 
+	}
+	.logo_mobile{
+		width: 100%;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		margin: 50px auto;
+	}
+	.logo{
+		display: none;
+	}
+	nav{
+		width: 100%;
+		flex-direction: column;
+	}
+	nav a{
+		width: 80%;
+		text-align: center;
+		border-top: 1px solid black;
+	}
+	.pic{
+		display: none;
+	}
+	.services{
+	width: 80%;
+	border-bottom: 2px solid black;
+	margin: 50px auto; 
+}
+	.main{
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	border-bottom: 2px solid black; 
+}
+	.box{
+		width: 80%;
+		margin-top: 20px auto;
+		padding: 10px; 
+}
+.pic_bottom{
+	display: none;
+}
+}
