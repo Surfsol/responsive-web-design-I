@@ -237,7 +237,7 @@ footer {
 }
 
 
-
+/*responsive tablet*/
 @media screen and (max-width: 800px){
 	body {
 	  /* centers the website */
@@ -341,21 +341,27 @@ footer {
   /*resize divs*/
   .top-content div, 
   .bottom-content div{
-    width: 100%;
+    width: 80%;
   }
 
   .top-content,
   .bottom-content{
     width:  100%;   
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto; 
   }
 
 
   .features, .about, .services, .products, .vision{
-    margin: 10%; /*moves to center*/ 
+   /* margin: 10%; /*moves to center*/ 
     margin-top: 25px;
-    padding-right: 10%;
+  /*  padding-right: 10%;*/
+    width: 80%;
+    
   }
+
   .features{
   	padding-top: 25px;
   }

@@ -235,6 +235,8 @@ footer{
 	nav{
 		width: 100%;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	nav a{
 		width: 80%;
@@ -243,25 +245,44 @@ footer{
 	}
 	.pic{
 		display: none;
+		
 	}
 	.services{
 	width: 80%;
 	border-bottom: 2px solid black;
 	margin: 50px auto; 
-}
+	}
+
+	/*put in column, centered, main is 100%, box will be 80%*/
 	.main{
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin: auto;
 	width: 100%;
 	border-bottom: 2px solid black; 
-}
+	}
+
+	/*make all boxes same width as all elements, 10px above and below*/
 	.box{
 		width: 80%;
-		margin-top: 20px auto;
+		margin: 10px 0; 
 		padding: 10px; 
-}
-.pic_bottom{
+	}
+
+	.pic_bottom{
 	display: none;
-}
+	}
+
+	/*justify left side, box width same as other elements, margin align left side with others*/
+	.bottom{ 
+		justify-content: flex-start;
+		width: 80%;  
+		margin-left: 10%; 
+		
+	}
+	/*make adjustments, above is 48%*/
+	.facts{
+		width: 100%; 
+	}
 }
