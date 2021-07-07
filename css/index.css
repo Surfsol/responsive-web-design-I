@@ -1,3 +1,387 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.wrapper {
+  width: 975px;
+  margin: 10px auto;
+}
+nav {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_mobile {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+nav .logo {
+  padding-left: 50px;
+}
+
+header {
+  line-height: 0.75;
+  margin: 50px 0px 50px 100px;
+  width: 876px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* would like to slide text and image to left a little */
+
+header .title {
+  font-size: 68px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header .title button {
+  border: 1px solid black;
+}
+
+header img {
+  width: 40%;
+}
+
+.top-content {
+  width: 876px;
+  display: flex;
+}
+
+/* include both divs in one */
+.top-content div {
+  width: 49%;
+}
+
+.middle-img {
+  margin: 30px 0px;
+}
+
+.bottom-content {
+  width: 876px;
+  display: flex;
+}
+
+.bottom-content div {
+  width: 33%;
+}
+
+.contact {
+  margin-top: 30px;
+}
+
+body {
+  /* centers the website */
+  width: 876px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*responsive tablet*/
+@media screen and (max-width: 800px) {
+  body {
+    /* centers the website */
+    width: 800px;
+    margin: 0 2%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .logo_mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    height: 30px;
+    padding-bottom: 10px%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+  .globe {
+    display: none;
+  }
+  header {
+    margin: 50px auto;
+    width: 100%;
+  }
+  header .title {
+    font-size: 68px;
+    justify-content: center;
+  }
+  header button {
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*adjust body width to center items*/
+  body {
+    /* centers the website */
+    width: 500px;
+    margin: 0 auto;
+  }
+  /*display and center top logo, margin bottom is space between logo and top border of nav*/
+  .logo_mobile {
+    display: block;
+    margin-left: 180px; /*to center image*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 60%;
+    padding-bottom: 10px%;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0 5%;
+  }
+  /*add bottom border line, center text*/
+  nav a {
+    border-top: 1px solid black;
+    text-align: center;
+    width: 80%;
+    margin: 0 5%;
+    padding: 12px;
+    font-size: 20px;
+  }
+  /*replaced with .top_logo*/
+  .logo {
+    display: none;
+  }
+
+  header {
+    width: 80%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px; /*space between button and borderline*/
+    padding-top: 50px; /*between Innovation and top borderline*/
+    margin: auto;
+    text-align: center;
+  }
+  .globe {
+    display: none;
+  }
+
+  /*resize divs*/
+  .top-content div,
+  .bottom-content div {
+    width: 80%;
+  }
+
+  .top-content,
+  .bottom-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .features,
+  .about,
+  .services,
+  .products,
+  .vision {
+    /* margin: 10%; /*moves to center*/
+    margin-top: 25px;
+    /*  padding-right: 10%;*/
+    width: 80%;
+  }
+
+  .features {
+    padding-top: 25px;
+  }
+
+  /*width and margin set to 100%, used to center*/
+  .middle-img {
+    width: 80%;
+    margin: 25px 10% 25px 10%;
+    height: 100px;
+  }
+  .contact {
+    margin: 10%;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+  }
+  hr {
+    display: none;
+  }
+}
